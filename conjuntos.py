@@ -54,7 +54,7 @@ print(novo)
  
 #Uso interessante de conjuntos Sets
 
-cidades = ['São Paulo', 'Rio de Janeiro', 'Belo Horizonte,São Paulo', 'Rio de Janeiro', 'Belo Horizonte']
+cidades = ["São Paulo", "Rio de Janeiro", "Belo Horizonte", "São Paulo", "Rio de Janeiro", "Belo Horizonte"]
 print(cidades)
 
 
