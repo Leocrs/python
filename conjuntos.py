@@ -48,8 +48,10 @@ for valor in conjuntos:
  
 #Uso interessante de conjuntos Sets
 
-conjunto = {1,2,3,4,5}
+conjunto = {1,2,3,4,5,5,7}
 print(conjunto)
+novo = conjunto.__len__()
+print(novo)
 
 
 
