@@ -42,16 +42,20 @@ print(conjuntos.__len__())
 #Podemos iterar em um Sets normalmente
 for valor in conjuntos:
     print(valor)
+    
+    
+    conjunto = {1,2,3,4,5,5,7}
+print(conjunto)
+novo = conjunto.__len__()
+print(novo)
     """
     
 
  
 #Uso interessante de conjuntos Sets
 
-conjunto = {1,2,3,4,5,5,7}
-print(conjunto)
-novo = conjunto.__len__()
-print(novo)
+cidades = ['São Paulo', 'Rio de Janeiro', 'Belo Horizonte,São Paulo', 'Rio de Janeiro', 'Belo Horizonte']
+print(cidades)
 
 
 
