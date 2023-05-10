@@ -14,4 +14,4 @@ receita = {'jan': 100, 'fev': 120, 'mar': 400}
 
 for chave in receita:
     print(f'{chave} = R$ {receita[chave]}')
-    
+    print(type(chave))
