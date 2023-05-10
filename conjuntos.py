@@ -48,14 +48,15 @@ for valor in conjuntos:
 print(conjunto)
 novo = conjunto.__len__()
 print(novo)
+
+conjuntos = {1,2,3,4}
+print(conjuntos)
+conjuntos.add(5)
+conjuntos.add(5) # não duplica e nem gera erro, é ignorado e não add.
+conjuntos.add(6)
+print(conjuntos)
+
     """
     
-
- 
-#Uso interessante de conjuntos Sets
-
-cidades = ["São Paulo", "Rio de Janeiro", "Belo Horizonte", "São Paulo", "Rio de Janeiro", "Belo Horizonte"]
-print(cidades)
-
-
-
+conjuntos = {1,2,3,4}
+print(conjuntos),conjuntos.remove(4),print(conjuntos)
