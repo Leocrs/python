@@ -1,0 +1,10 @@
+"""
+Modulo collection - Counter (contador)
+
+
+
+
+
+
+
+    """
