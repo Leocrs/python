@@ -1,0 +1,6 @@
+"""   
+listas alinhadas 
+
+
+"""
+
