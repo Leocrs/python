@@ -38,8 +38,6 @@ print(numeros_dobrados)
 #list comprehension
 print([numero * 2 for numero in numeros])
 
-"""
-#Exemplo 1 - List Comprehension Exemplo
 
 nome = ('Leonardo Campos')
 print([letra.upper() for letra in nome])
@@ -57,3 +55,15 @@ print([numero * 3 for numero in range(1, 11)])
 
 #Exemplo 5 - List Comprehension
 print([str(numero) for numero in [1, 2, 3, 4, 5]])
+"""
+#Exemplo 1 - List Comprehension Exemplo
+
+lista_precos = [500, 1500, 2000, 100, 25]
+ 
+#Modo tradicional de criar uma lista codigo    
+nova_lista_precos = [valor * 2 for valor in lista_precos]
+print(nova_lista_precos)
+
+#Modo tradicional de criar uma lista codigo com list comprehension
+print(lista_precos * 
+
