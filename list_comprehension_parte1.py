@@ -55,15 +55,28 @@ print([numero * 3 for numero in range(1, 11)])
 
 #Exemplo 5 - List Comprehension
 print([str(numero) for numero in [1, 2, 3, 4, 5]])
-"""
-#Exemplo 1 - List Comprehension Exemplo
 
+
+"""
 lista_precos = [500, 1500, 2000, 100, 25]
- 
-#Modo tradicional de criar uma lista codigo    
-nova_lista_precos = [valor * 2 for valor in lista_precos]
+
+#Modo de criar uma lista cogigo tradicional   (exemplo1)
+nova_lista_precos = []
+for preco in lista_precos:
+    nova_lista_precos.append(preco *2)
 print(nova_lista_precos)
 
-#Modo tradicional de criar uma lista codigo com list comprehension
-print(lista_precos * 
+#Modo de criar uma lista codigo em list comprehension  (exemplo1) 
+nova_lista_precos = [preco * 2 for preco in lista_precos]
+print(nova_lista_precos)
 
+#Modo de criar uma lista cogigo tradicional   (exemplo2)
+imposto = []
+for preco in lista_precos:
+    if preco >1000:
+        imposto.append(preco * 0.5)
+print(imposto)
+
+#Modo de criar uma lista codigo em list comprehension  (exemplo2) 
+imposto = [preco * 0.5 for preco in lista_precos if preco > 1000]
+print(imposto)
