@@ -55,3 +55,8 @@ lista_autores = sorted(lista_autores)
 print(lista_autores)    
 """
 
+# Exemplo de uma funçao lambda tradicional
+lista_autores = ["Mario de andrade", "Clarice Lispector", "Bianca de Almeida", "Machado de Assis", "Zibia Gasparetto", "Antonio de Paiva"]
+lista_autores.sort(key=lambda sobrenome: sobrenome.split(" ")[-1].lower())
+lista_autores = sorted(lista_autores)
+print(lista_autores)
