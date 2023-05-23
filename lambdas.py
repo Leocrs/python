@@ -52,11 +52,30 @@ print(numero(1))
 lista_autores = ["Mario de andrade", "Clarice Lispector", "Bianca de Almeida", "Machado de Assis", "Zibia Gasparetto", "Antonio de Paiva"]
 lista_autores.sort(key=lambda sobrenome: sobrenome.split(" ")[-1].lower())
 lista_autores = sorted(lista_autores)
-print(lista_autores)    
-"""
+print(lista_autores) 
 
 # Exemplo de uma funçao lambda tradicional
 lista_autores = ["Mario de andrade", "Clarice Lispector", "Bianca de Almeida", "Machado de Assis", "Zibia Gasparetto", "Antonio de Paiva"]
 lista_autores.sort(key=lambda sobrenome: sobrenome.split(" ")[-1].lower())
 lista_autores = sorted(lista_autores)
 print(lista_autores)
+   
+"""
+# preco =1000
+# def calcular_imposto(preco):
+#     return preco * 0.3
+# print(calcular_imposto(preco))
+
+# calcular_imposto = lambda preco: preco * 0.3
+# print(calcular_imposto(preco))
+
+# calcular_imposto = lambda x: x * 0.3
+# print(calcular_imposto(preco))
+
+# forma mais simples de criar uma funçao lambda em uma funcao
+precos = [1000, 2000, 3000, 4000, 5000, 6000] # lista de precos
+(impostos) = list(map(lambda x: x * 0.3, precos)) # desconto de 30%
+print(impostos)
+
+
+
