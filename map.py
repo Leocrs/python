@@ -48,6 +48,26 @@ print(precos_formatados)
 
 """
 
-import pandas 
+import pandas as pd
+import statistics as display
+import xlrd as xlrd
+import matplotlib.pyplot as plt
+import numpy as np
+ 
+ 
 
+   
+precos = [1000, 1500, 1250, 2500]
+def adiciona_imposto (preco):
+    return preco *1.1
+
+precos_com_imposto = list(map(lambda x: x * 1.1, precos)) # Aplica o imposto de 10% em cada valor da lista
+precos_formatados = ["R${:,.2f}".format(valor) for valor in precos_com_imposto] # Formata cada valor da lista como uma string em moeda brasileira
+print(precos_formatados)
+
+tabela = pd.read_excel("Base Vendas.xlsx")
+
+tabela["Preco com imposto"] = list(map(adiciona_imposto, tabela ["Preco Unitario"]))
+print(tabela)
+tabela.to_excel("Base Vendas Atualizada.xlsx")
 
