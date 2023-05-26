@@ -1,13 +1,13 @@
-"""  
-list_comprehension_parte1 
-lista comprehension é uma forma de criar listas.
 
-sintaxe da list comprehension:
+# list_comprehension_parte1 
+# lista comprehension é uma forma de criar listas.
 
-Para entender melhor o que é uma list comprehension, vamos ver como funciona: 
-Devemos dividir nosso código em duas partes:
-A primeira parte for numero in numeros:
-A segunda parte for numero * 10:
+# sintaxe da list comprehension:
+
+# Para entender melhor o que é uma list comprehension, vamos ver como funciona: 
+# Devemos dividir nosso código em duas partes:
+# A primeira parte for numero in numeros:
+# A segunda parte for numero * 10:
 
 
 #Exemplo
@@ -57,7 +57,7 @@ print([numero * 3 for numero in range(1, 11)])
 print([str(numero) for numero in [1, 2, 3, 4, 5]])
 
 
-"""
+
 lista_precos = [500, 1500, 2000, 100, 25]
 
 #Modo de criar uma lista cogigo tradicional   (exemplo1)
