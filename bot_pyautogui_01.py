@@ -1,6 +1,7 @@
 
 import pyautogui  # faz automação com o pyautogui para criar o bot localmente (maquina)
 pyautogui.pause= 3  # tempo de pausa  segundos
+import pandas as pd  # importa o pandas para manipular os dados
 
 import time # para pausar
 time.sleep(3) # tempo de pausa segundos  
