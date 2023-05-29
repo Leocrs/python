@@ -6,7 +6,7 @@ print(max(lista)) #retorna o maior valor da lista
 print(len(lista)) #retorna o tamanho da lista
 print(sum(lista)) #retorna a soma dos valores da lista
 
-###########################################################################################################################
+##########################################################################################################
 
 
 Como Criar Um Programa Executável Em Python - Em 5 Minutos
@@ -18,4 +18,8 @@ pip install pyinstaller`
 Rode o seguinte comando para criar um executável(caso não queira que ele crie um terminal use a opção --noconsole)
 pyinstaller --onefile nome-do-arquivo-python.py
 
-####################################################################################################################################
+Exemplo de comando para criar o arquivo na pasta "dist"
+1) pip install pyinstaller 
+2) pyinstaller --onefile -w             (Se precisar de interação de dela para execultar)
+3) pyinstaller --onefile Gabarito.py            (SEM precisar de interação de dela para execultar)
+###########################################################################################################
