@@ -1,5 +1,21 @@
+Segurando o ctrl sobre uma palava ele me trás a definição (help)
 
 
+print(min(lista)) #retorna o menor valor da lista
+print(max(lista)) #retorna o maior valor da lista
+print(len(lista)) #retorna o tamanho da lista
+print(sum(lista)) #retorna a soma dos valores da lista
+
+###########################################################################################################################
 
 
+Como Criar Um Programa Executável Em Python - Em 5 Minutos
+Mini-Tutorial de como criar um executável para Windows
+https://www.youtube.com/watch?v=TBdRfrWT7Co
+Para ver o vídeo tutorial completo clique aqui: Link para vídeo no Youtube
+Instale o PyInstaller
+pip install pyinstaller`
+Rode o seguinte comando para criar um executável(caso não queira que ele crie um terminal use a opção --noconsole)
+pyinstaller --onefile nome-do-arquivo-python.py
 
+####################################################################################################################################
