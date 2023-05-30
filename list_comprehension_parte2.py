@@ -1,9 +1,8 @@
-"""  
-lista_comprehension_parte2
+ 
+# lista_comprehension_parte2
+# Nósa podemos adicionar estruturas logicas, as nossas lists comprehension
 
-Nósa podemos adicionar estruturas logicas, as nossas lists comprehension
-
-"""
+######################################################################
 
 #Exemplo 1 - List Comprehension
 
@@ -13,6 +12,8 @@ impares = [numero for numero in numeros if numero % 2 != 0]
 print(pares)
 print(impares)
 
+######################################################################
+
 #Refatorar  Qualquer numero par de 2 é 0, e 0 em Python é False, not False = True
 pares = [numero for numero in numeros if not numero % 2]
 
@@ -21,7 +22,11 @@ impares = [numero for numero in numeros if numero % 2]
 print(pares)
 print(impares)
 
+######################################################################
+
 # Exemplo 2 - List Comprehension
 
 resposta = [numero *2 if numero % 2 == 0 else numero /2 for numero in numeros]
 print(resposta)
+
+#######################################################################

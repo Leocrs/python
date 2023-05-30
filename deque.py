@@ -1,8 +1,5 @@
-"""     
-Deque é uma lista de alto performance, que permite adicionar e remover elementos
-
-
-"""
+    
+# Deque é uma lista de alto performance, que permite adicionar e remover elementos
 
 from collections import deque
 

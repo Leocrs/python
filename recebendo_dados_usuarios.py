@@ -1,4 +1,5 @@
-"""Recebendo dados do usuario"""
+#  dados do usuario
+
 from turtledemo.chaos import f
 
 # Endrada de Dados

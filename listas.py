@@ -1,6 +1,12 @@
-"""
-Listas funciona como vetores ou matrizes, ou seja (arrays) de forma dinâmico e podendo colocar QUALQUER
-arquivo de dados.
+# Listas funciona como vetores ou matrizes, ou seja (arrays) de forma dinâmico e podendo colocar QUALQUER
+# arquivo de dados.
+
+lista1 = [1, 2, 3, 4, 5]
+lista2 = [6, 7, 8, 9, 10]
+lista3 = [11, 12, 13, 14, 15]
+lista4 = [16, 17, 18, 19, 20]
+lista5 = [21, 22, 23, 24, 25]
+lista6 = [26, 27, 28, 29, 30]
 
 print(lista1)
 print(lista2)
@@ -8,6 +14,7 @@ print(lista3)
 print(lista4)
 print(lista5)
 
+#######################################################################
 num = 1
 if num in lista2:
     print( f"Tem o numero {num}")
@@ -19,6 +26,8 @@ print(lista2)
 print(lista2.count(8))
 print(lista5.count("o"))
 
+########################################################################
+
 # Para add elementos em lista usamos a função append. OBS: um elemento por vez!
 print(lista2)
 lista2.append(10)
@@ -27,24 +36,25 @@ lista2.append(11)
 print(lista2)
 lista2.append([20, 25, 30])
 print([lista2])
-
 lista2.extend([11 ,12, 13])   # extend Add elementos de forma adicional á lista.
 print(lista2)
+
+########################################################################
 
 lista2 = list(range(6))
 print(lista2)
 lista2.append(7)
 lista2
-
 lista2.insert(2,"2")
 print(lista2)
+
+#########################################################################
 
 # Podemos colocar duas listas juntas
 
 lista1.extend(lista2)  # Posso usar o "+" no lugar do extend
 list = lista1+lista2+lista3
 print(list)
-
 # reverse ou [:: -1] faz o mesmo resultado!
 lista1.reverse()
 lista2.reverse()
@@ -54,6 +64,7 @@ print(lista2)
 print(lista5)
 print(lista5[::-1])
 
+#########################################################################
 
 #Copiar uma lista!
 lista6 = lista2.copy()
@@ -67,11 +78,12 @@ print(lista5)
 lista5.pop()
 print(lista5)
 
-
 lista2.clear() # Apada dados da mesma
 
 lista2 = lista2 * 3   # Multiplicar
 print(lista2)
+
+#########################################################################
 
 frase = "Eu vou aprender Python de verdade!"
 frase = frase.split()   # slip usado para separar as palavras em lista
@@ -87,11 +99,13 @@ print(frase)
 print(lista6)
 print(type(lista6))
 
+#########################################################################
+
 #Iterando sobre lista Utilizando "for"
 for elementos in lista1+lista2:
     print(elementos)
 
-    #Iterando sobre lista Utilizando "while"
+#Iterando sobre lista Utilizando "while"
 carrinho = []
 produto = ""
 while produto != "sair":
@@ -103,6 +117,9 @@ while produto != "sair":
 for produto in carrinho:
     print (produto)
     # Uitlizando variaeis de lista.
+    
+########################################################################
+
 numeros = [1,2,3,4,5,6,7,8,9,10]
 print(numeros)
 
@@ -120,8 +137,10 @@ num10 = 10
 numeros = [num1,num2,num3,num4,num5,num6,num7,num8,num9,num10]
 print(numeros)
 
-# print(cores[0])
+########################################################################
+cores = ["verde", "amarelo", "azul", "branco"]
 
+print(cores[0])
 # Indice negativo funciona como uma roda sempre pega o proximo da lista
 print(cores[-0])
 print(cores[-1])
@@ -143,14 +162,18 @@ indice = 0
 while indice < len(cores):
     print(cores[indice])
     indice = indice +1
+    
+#######################################################################
 
-    # Gerar indice de um for para ver qual a relação de ordem de numero.
+# Gerar indice de um for para ver qual a relação de ordem de numero.
 for indice, cor in enumerate(cores):
     print(indice,cor)
 
-    # Em listas fazemos acesso aos elementos de forma indexadas.
+# Em listas fazemos acesso aos elementos de forma indexadas.
 #          0          1        2        3
 cores = ['verde', "amarelo", "azul", "branco"]
+
+#######################################################################
 numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 # Revisando Slicing
@@ -161,19 +184,21 @@ print(numeros.index(2,1))  #buscando a partir de 1
 print(numeros.index(3,2))  #buscando a partir de 2
 print(numeros.index(7,3))  #buscando a partir de 2
 
+#######################################################################
+
 # Podemos fazer busca dentro de range
 print(numeros.index(8,3,6))
 
-print(sum(lista)) #soma
-print(max(lista)) #maximo
-print(min(lista)) #minimo
-print(len(lista)) #tamanho
+print(sum(lista1)) #soma
+print(max(lista2)) #maximo
+print(min(lista3)) #minimo
+print(len(lista4)) #tamanho
 
 # Transforma em lista tuplas
 
-print(lista)
-print(type(lista))
-tupla = tuple(lista)
+print(lista1)
+print(type(lista2))
+tupla = tuple(lista3)
 print(tupla)
 
 # Trabalhando com slice de lista - com paramentro de inicio
@@ -183,7 +208,6 @@ lista = [ 1,2,3,4]
 num1, num2, num3, num4 = lista
 print(num1, num2, num3, num4)
 #OBS: o mumero de desempacotamento tem que ter o mesmo numero der variaveis e vise versa.
-"""
 
 lista = [ 1,2,3,4]
 print(lista)

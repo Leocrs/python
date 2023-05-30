@@ -10,7 +10,6 @@ sorted é uma função que retorna uma lista ordenada.
 nomes = ('João', 'Maria', 'José', 'Ana, karina')
 print(sorted(nomes))
 
-
 nomes = {'João', 'Maria', 'José', 'Ana, karina'}
 print(sorted(nomes))
 

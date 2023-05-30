@@ -1,5 +1,5 @@
-"""  
-raise é uma funcao que retorna um erro.
+ 
+# raise é uma funcao que retorna um erro.
 
 import colorama
 colorama.init()
@@ -15,4 +15,4 @@ def colore(texto, cor):
     
 colore = colore("verde", "vermelho")    
 
-"""
+

@@ -1,12 +1,6 @@
-"""Tipo FLoat
-
-Tipo real, decimal
-
-Classe decimal
-
-
-"""
-
+# tipo FLoat
+# Tipo real, decimal
+# Classe decimal
 # Forma errado, não se usa (,) e sim (.)  valor =1,44
 
 valor =1.44

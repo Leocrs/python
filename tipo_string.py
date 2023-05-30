@@ -1,15 +1,17 @@
-"""
-Tipo de string
-
-Uma string EXEMPLO: "234" "a" "True" "42,3"
+# Tipo de string
+# Uma string EXEMPLO: "234" "a" "True" "42,3"
 
 nome = "Leonardo Campos"
 print(nome)
 print(type(nome))
 
+##################################################################
+
 nome = "Leonardo Campos Rodrigues dos Santos"
 print(nome)
-print(type(nome))"""
+print(type(nome))
+
+####################################################################
 
 nome = "Leonardo Campos"
 print(nome)

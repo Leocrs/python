@@ -1,13 +1,13 @@
-"""   
-listas alinhadas 
+# listas alinhadas 
 
-Algumas linguas de programação possuem estruturas de dados que se chamam arrays.
-Unidimencionais arrays/vetores
-multidimencionais arrays/matrizes
+# Algumas linguas de programação possuem estruturas de dados que se chamam arrays.
+# Unidimencionais arrays/vetores
+# multidimencionais arrays/matrizes
+# Em python não temos as listas alinhadas.
 
-Em python não temos as listas alinhadas.
+#######################################################################
 
-exemplo:
+# exemplo 1:
 
 numeros = [1,2, 'b', 3.23, True, 5]
 
@@ -20,19 +20,20 @@ print(listas[0])
 print(listas[0][2])
 print(listas[2][1])
 
+#######################################################################
+
 #iterando com loops em listas alinhadas
 for lista in listas:
     for elemento in lista:
         print(elemento)
-        
-        
+               
 #list comprehension
 [[print (elemento) for elemento in lista] for lista in listas for elemento in lista]
 
 #list comprehension 2
 [[print(elemento) for elemento in lista] for lista in listas]
 
-"""
+#######################################################################
 
 tabuleiro = [[numero for numero in range(1, 4)] for valor in range(1, 4)]   
 print(tabuleiro)

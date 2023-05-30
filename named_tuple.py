@@ -1,7 +1,5 @@
-"""     
-named_tuple = tuple() é uma tupla não ordenada
-
-"""
+    
+# named_tuple = tuple() é uma tupla não ordenada
 
 tupla = (1, 2, 3)
 print(tupla[1]) # tupla não é mutável e não é indexada

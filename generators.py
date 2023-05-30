@@ -1,5 +1,9 @@
-"""   
-generators.py - Generators in Python é uma estrutura de dados que permite criar sequências de valores. 
+ 
+#generators.py - Generators in Python é uma estrutura de dados que permite criar sequências de valores. 
+
+from sys import getsizeof 
+
+##################################################################################
 
 nomes = ['Luiz', 'Maria', 'João', 'Pedro', 'Ana']
 
@@ -7,9 +11,8 @@ print(any(nomes[0] == "J" for nome in nomes))
 print(all(nomes[0] == "j" for nome in nomes))
 
 print(getsizeof("Leonardo")) # mostrar o tamanho da string em bytes
-"""
 
-from sys import getsizeof 
+##################################################################################
 
 #gerando uma lista de numeros com list comprehension
 list_comp = getsizeof ([x * 10 for x in range(1000)])

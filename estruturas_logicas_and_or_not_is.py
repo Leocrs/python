@@ -1,16 +1,15 @@
-"""
-Estrutas: logicas and, or, not, is
 
-Operadores unários: not, is
-Operadores binários: and, or
+# Estrutas: logicas and, or, not, is
 
-Regras de funcionamento:
+# Operadores unários: not, is
+# Operadores binários: and, or
 
-Para and" ambos os valores precisam ser True
-Para or" um ou outro valor precisam ser True
-Para not" o valor do bolano é invertido, ou seja, se for True e False e se for False ele vira True.
+# Regras de funcionamento:
 
-"""
+# Para and" ambos os valores precisam ser True
+# Para or" um ou outro valor precisam ser True
+# Para not" o valor do bolano é invertido, ou seja, se for True e False e se for False ele vira True.
+
 ativo = True
 logado = False
 

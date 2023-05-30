@@ -1,8 +1,8 @@
-"""  
-kwargs is a dictionary 
-Esse é só mais um parametro que recebe um dicionario dentro do args
 
+# kwargs is a dictionary 
+# Esse é só mais um parametro que recebe um dicionario dentro do args
 
+########################################################################
 def cores_favoritas(**kwargs):
     #print(kwargs)
     for pessoa, cor in kwargs.items():
@@ -10,19 +10,17 @@ def cores_favoritas(**kwargs):
         
 cores_favoritas(Natalia='vermelho', Leonardo='azul', Joao='verde')
 
-"""
+########################################################################
 
-# Função na ordem correta
+#Função na ordem correta
 #Descompactando kwargs
 
+nome ={'nome':'Natalia','sobrenome':'Rita'} 
 def mostra_nomes(**kwargs):
     return f"{kwargs['nome']} {kwargs['sobrenome']}"
-        
-nome ={'nome':'Natalia','sobrenome':'Rita'}        
-
 print(mostra_nomes(**nome))
         
-
+########################################################################
 
 def soma_multiplos_numeros (a, b, c, **kwargs):
     return a + b + c
@@ -38,7 +36,6 @@ soma_multiplos_numeros(*conjunto)
 soma_multiplos_numeros(*dicionario)
 
 #OBS: os nomes dos parametros devem ser os mesmos da funcao
-
 
 print(soma_multiplos_numeros(**dicionario))
 print(soma_multiplos_numeros(*tupla))

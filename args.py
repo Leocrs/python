@@ -1,14 +1,17 @@
-"""   
-Entendo o *args 
+  
+# Entendo o *args 
 
-O *args é um parâmetro que recebe uma sequência de parâmetros qualquer.
+# O *args é um parâmetro que recebe uma sequência de parâmetros qualquer.
 
-def soma_todos_numeros(num1= 1, num2= 2, num3= 3):
-    return num1 + num2 + num3  
-print(soma_todos_numeros(1, 2, 3, 4))
+########################################################################
 
+def soma_todos_numeros(num1= 1, num2= 2, num3= 3): # O *args é um parâmetro que recebe uma sequência de parâmetros qualquer.
+    return num1 + num2 + num3   
+print(soma_todos_numeros(1, 2, 3, 4)) 
 
-def soma_todos_numeros(*args):
+########################################################################
+
+def soma_todos_numeros(*args): # O *args é um parâmetro que recebe uma sequência de parâmetros qualquer.
     print(sum(args))
 
 soma_todos_numeros()
@@ -18,18 +21,21 @@ soma_todos_numeros(1, 2, 3)
 soma_todos_numeros(1, 2, 3, 4)
 soma_todos_numeros(1, 2, 3, 4, 5)
 
+########################################################################
 
-def verifica_info(*args):
+def verifica_info(*args): #
     if "leonardo Campos" in args and "Estuda Python" in args:
         return"Leonardo Campos seja bem vindo!"
     return "Eu não sei quem é você!"
 print(verifica_info())
 print(verifica_info("leonardo Campos"))
 print(verifica_info("Estuda Python"))
-"""
+
+########################################################################
+
 # Entendo o *args
 
-def soma_todos_numeros(*args):
+def soma_todos_numeros(*args): 
     print(sum(args))
 
 soma_todos_numeros()

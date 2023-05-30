@@ -1,11 +1,10 @@
-"""   
-reduce is a built-in function in python	é uma funcao que recebe uma funcao como argumento e retorna outra funcao
 
-dados [a1,a2,a3,a4]
+# reduce is a built-in function in python	é uma funcao que recebe uma funcao como argumento e retorna outra funcao
+
+dados = ['a1','a2','a3','a4']
 reduce(function,list)
 a1 = a2 = a3 = a4 = 1
-Ele soma a1 e a2 e a cada passo ela aplica a funçao a3 e a4 e vai somando os resultados
-"""
+# Ele soma a1 e a2 e a cada passo ela aplica a funçao a3 e a4 e vai somando os resultados
 
 from functools import reduce
 

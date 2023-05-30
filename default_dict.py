@@ -1,11 +1,9 @@
-"""   
-default_dict é um dicionário vazio.
-Ao criar um dicionário, o dicionário será inicializado com um valor padrão. nós pode definir um valor padrão para cada chave.
-um valor padrão pode ser definido de acordo com a necessidade do usuário. default_dict[chave] = valor
-podemos utilizar um lambda para definir um valor padrão.
-OBS: lambda é uma função anônima, que não tem nome e pode ser utilizada dentro de uma função com valores
 
-"""
+# default_dict é um dicionário vazio.
+# Ao criar um dicionário, o dicionário será inicializado com um valor padrão. nós pode definir um valor padrão para cada chave.
+# um valor padrão pode ser definido de acordo com a necessidade do usuário. default_dict[chave] = valor
+# podemos utilizar um lambda para definir um valor padrão.
+# OBS: lambda é uma função anônima, que não tem nome e pode ser utilizada dentro de uma função com valores
 
 from collections import defaultdict
 
