@@ -9,16 +9,16 @@ import email.message
 
 def enviar_email():  
     corpo_email = """
-    <p>Olá, tudo bem? </p> 
+    <p>Olá, tudo bem? </p>
     <p>Segue o meu e-mail automático para você! </p>
      <p>Assim que possível, eu envio um e-mail, ok! </p>
     """
 
     msg = email.message.Message()
     msg['Subject'] = "Resposta automatica"
-    msg['From'] = 'leonnardo.campos@gmail.com'
-    msg['To'] = 'leonnardo.campos@gmail.com'
-    password = 'nmtnrfdqjuiolvco' 
+    msg['From'] = 'SEU E-MAIL@gmail.com'
+    msg['To'] = 'SEU E-MAIL@gmail.com'
+    password = 'AQUI VOCÊ GERA A SENHA PELO GMAIL NÃO É A SENHA DA CONTA' 
     msg.add_header('Content-Type', 'text/html')
     msg.set_payload(corpo_email )
 
