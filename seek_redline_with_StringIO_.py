@@ -54,3 +54,16 @@
 # with open('Texto_teste.txt', 'w') as arquivo1:
 #     print(arquivo1.write('Escrever dados em arquivo para teste! \n'))
 #     print(arquivo1.readline)
+#######################################################################################################
+
+# Forma de abrir arquivos em Python do Sistema Operacional
+# import da biblioteca io EX: from io import StringIO
+
+from io import StringIO
+
+mensagem = 'Python é uma linguagem de programação de alto nível' # mensagem do arquivo
+arquivo = StringIO(mensagem) # cria um objeto StringIO
+arquivo = open('arquivo.txt', 'w') # abre o arquivo codigos_moedas.txt no modo de leitura
+print(arquivo.read())
+
+arquivo.write('Python é uma linguagem de programação de alto nível')
