@@ -2,31 +2,22 @@
 
 # Teste de velocidade com expressões geradoras 
 
-def numeros():
-    for numero in range(1,11):
-        yield numero
-gerador1 = numeros()
-print(next(gerador1)) # 1 é o primeiro elemento do gerador e vai até o numero 10 que é o limete que coloquei no range
-
-#######################################################################################################################
-
-gerador2 = (numero for numero in range(1, 11))
-print(next(gerador2)) # gerador2 é um gerador
-
-#######################################################################################################################
-
 import time # importa a biblioteca time
 #Generador com expressões geradoras (generator expressions)
-gerador_inicio = time.time() # tempo decorrido
+gen_inicio = time.time() # tempo decorrido
 print(sum(numero for numero in range(1, 11))) # soma dos numeros
-gerador_tempo = time.time() - gerador_inicio # tempo decorrido
-print(gerador_tempo) # tempo decorrido
+gen_tempo = time.time() - gen_inicio # tempo decorrido
+print(gen_tempo) # tempo decorrido
 
 #######################################################################################################################
 
 #list comprehension
 
-lista_iniicio = time.time()
-print(sum([numero for numero in range(1000000000)])) # 100 milhões de numeros
-lista_tempo = time.time() - lista_iniicio
-print(lista_tempo)
+list_iniicio = time.time()
+print(sum([numero for numero in range(100)])) # 100 milhões de numeros
+list_tempo = time.time() - list_iniicio
+print(list_tempo)
+
+
+print(f'generator expression levou {gen_tempo}')
+print(f'list comprehension levou {list_tempo}')
