@@ -23,3 +23,8 @@ Exemplo de comando para criar o arquivo na pasta "dist"
 2) pyinstaller --onefile -w             (Se precisar de interação de dela para execultar)
 3) pyinstaller --onefile Gabarito.py            (SEM precisar de interação de dela para execultar)
 ###########################################################################################################
+
+PARA TROCAR A COR DA FONTE DOS COMENTARIOS
+1) Ir em configurações
+2) Colocar esse: tokenColorCustomizations
+3) trocar a dor desejada e tem essa opção de site para pegar cores https://www.flextool.com.br/tabela_cores.html
