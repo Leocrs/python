@@ -20,3 +20,5 @@ def pegar_cotacao_dolar(): # pegar_cotacao_dolar recebe uma funcao
     print(requisicao['USDBRL']['bid'])
 
 pegar_cotacao_dolar()
+
+
