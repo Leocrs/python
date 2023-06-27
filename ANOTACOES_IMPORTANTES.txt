@@ -28,3 +28,22 @@ PARA TROCAR A COR DA FONTE DOS COMENTARIOS
 1) Ir em configurações
 2) Colocar esse: tokenColorCustomizations
 3) trocar a dor desejada e tem essa opção de site para pegar cores https://www.flextool.com.br/tabela_cores.html
+
+################################################################################################################
+Aqui estão alguns atalhos de teclado úteis do VS Code para Python:
+
+Ctrl + Shift + P: Abre a palette de comandos.
+Ctrl + Shift + N: Abre um novo arquivo.
+Ctrl + Shift + T: Reabre o último arquivo fechado.
+Ctrl + Shift + F: Pesquisa por texto em todos os arquivos do projeto.
+Ctrl + /: Comenta/descomenta a linha atual.
+Ctrl + Shift + L: Seleciona todas as ocorrências da seleção atual.
+Shift + Alt + F: Formata o arquivo atual.
+F5: Inicia o depurador.
+F9: Adiciona ou remove um ponto de interrupção.
+F12: Vai para a definição do símbolo atual.
+Ctrl + espaço: Exibe a lista de preenchimento automático.
+Ctrl + Shift + espaço: Exibe a lista de parâmetros de uma função.
+Alt + Shift + F: Aplica autopep8 para formatar o código.
+Ctrl + K + Z: Alterna para o modo de leitura (Zen).
+Ctrl + K + S: Abre o menu para personalizar os atalhos de teclado.
