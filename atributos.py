@@ -5,9 +5,6 @@
 # Em Python, os atributos são chamados de propriedades. e dividos em 3 grupos
 
 
-# Atributos de instância: exemplos:
-
-
 # Atributos de classe: Exemplos: 
 # Por convenção , os atributos de classe são chamados publicos. Ou seja pode ser acessado por todo o projeto, Agora caso queria que o atributo fosse privado, 
 # deveria ser declarado como privado por duplo underscore "__" no ínicio do atributo. Isso tbm é conhecido como Mangling.
@@ -30,7 +27,32 @@ class Produto:
         self.preco = preco
         
         
+class Acesso:
+    def __init__(self, email, senha):
+        self.email = email
+        self.__senha = senha
+        
+# Esse é um atributo privado por convenção, a linguagem não impede que você acesse atributos privados ou publicos, é apenas uma sinalização. 
 
 
-# Atributos de dinamicos: Exemplos:
+# O que significam os atributos de instancia?
+# Significa que criamos  instancias de uma classe e todas as instancias terão o mesmo atributo.
+
+user1 =Acesso('leo@gmail.com', '123')
+user2 =Acesso('eu@gmail.com', '456')
+user1.mostra_email()
+user2.mostra_email()
+
+
+# Atributos de Classe
+
+
+
+
+
+
+   
+
+            
+
 
