@@ -1,11 +1,6 @@
-
-
 #POO Métodos
-
 # Métodos (função) representam um conjunto de acções que podem ser realizadas em um objeto. Ou seja um método é um conjunto de acções que podem ser executadas em um objeto
-
 # Em python dividimos os métodos em dois grupos: métodos de classe e métodos de instância.
-
 # Metodos de instância: 
 # O método __init__ é executado sempre que um objeto é instanciado. ou seja a partir da classe.
 
