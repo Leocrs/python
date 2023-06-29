@@ -1,4 +1,3 @@
-
 # Tuplas (tuple) São bastante parecidas com listas, a diferença é,
 # As tuplas são separar por parensetes ()
 # e listas por []

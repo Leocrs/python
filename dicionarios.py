@@ -1,10 +1,6 @@
-
 # Diconarios, São conhecidos por mapas.
-
 # Dicionarios são coleções do tipo chave/valor
-
 # Dicionarios são representados por {} chaves
-
 # Chaves e valor são separados por dois pontos "chaves:valor"
 # Tanto chave quanto valor podem ser de qualquer tipo de dados
 

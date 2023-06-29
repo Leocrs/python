@@ -1,5 +1,4 @@
- 
-# raise é uma funcao que retorna um erro.
+ # raise é uma funcao que retorna um erro.
 
 import colorama
 colorama.init()

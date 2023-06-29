@@ -1,6 +1,4 @@
-  
 # Documentando funções com docstrings 
-
 # OBS: podemos ter acesso a funções com docstrings utilizando a função help() __doc__ 
 
 def diz_oi():

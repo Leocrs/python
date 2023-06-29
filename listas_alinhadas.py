@@ -1,5 +1,4 @@
 # listas alinhadas 
-
 # Algumas linguas de programação possuem estruturas de dados que se chamam arrays.
 # Unidimencionais arrays/vetores
 # multidimencionais arrays/matrizes

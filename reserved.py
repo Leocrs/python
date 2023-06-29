@@ -1,4 +1,3 @@
-
 # reserved.py é uma lista de palavras reservadas
 
 nomes = ['leo', 'joao', 'lucas', 'maria']

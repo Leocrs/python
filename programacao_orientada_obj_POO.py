@@ -12,7 +12,6 @@
 
 # Métodos - Métodos são objetos que possuem características específicas e comportamentos.
 # Métodos são usados para executar ações.
-
 # Exemplo de Classes:
 
 class Pessoa:

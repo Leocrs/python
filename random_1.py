@@ -1,4 +1,3 @@
-
 # random_1.py é uma biblioteca de geradores de números aleatórios.
 
 ##########################################################################

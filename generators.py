@@ -1,5 +1,4 @@
- 
-#generators.py - Generators in Python é uma estrutura de dados que permite criar sequências de valores. 
+ #generators.py - Generators in Python é uma estrutura de dados que permite criar sequências de valores. 
 
 from sys import getsizeof 
 

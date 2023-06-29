@@ -1,7 +1,4 @@
-
-
 # Teste de memoria Generators 
-
 # def teste_de_memoria(): # Teste de memoria
 #     for indice in range(10): # Teste de memoria
 #         print(indice) # Teste de memoria

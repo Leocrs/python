@@ -1,6 +1,4 @@
-
 # map fazemos mapeameno de valores para função de outras variáveis
-
 
 import math
 

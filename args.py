@@ -1,6 +1,5 @@
   
 # Entendo o *args 
-
 # O *args é um parâmetro que recebe uma sequência de parâmetros qualquer.
 
 ########################################################################

@@ -1,4 +1,3 @@
-
 # min e max traz o menor e o maior valor de uma lista
 
 #exemplo 1:

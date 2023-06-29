@@ -1,4 +1,3 @@
-
 # Modulo collection - Counter (contador) High performance Container performance
 # Ele recebe um dicionário como parâmetro e retorna um objeto do tipo Counter, que é parecido com um dicionário
 

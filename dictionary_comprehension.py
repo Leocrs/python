@@ -1,4 +1,3 @@
-
 # Dictionary Comprehension é uma forma de criar dicionários.
 
 lista = [1, 2, 3, 4, 5]

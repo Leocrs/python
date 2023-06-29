@@ -1,11 +1,8 @@
-
 # Escopo de variavel
 # Dois casos:
 # 1ª Variaveis globais, São reconhecidas, ou sej, seu escopo compreende , todo o programa.
-
 # 2ª Variaveis local, São reconhecidas apenas no bloco onde foi declarada, ou seja, seu escopo compreende a limitação
 # do bloco onde foi declarada.
-
 # Para declarar variaveis em Python fazemos:
 
 Nome_da_variavel = "valor_da_variavel"

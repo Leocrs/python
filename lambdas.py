@@ -1,4 +1,3 @@
-
 #Utilizando lambdas é uma funçao anonima
 #Função em Python
 

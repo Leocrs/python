@@ -1,4 +1,3 @@
-
 # Break usado para parar ou sair do loop.
 
 resposta = ""

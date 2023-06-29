@@ -1,7 +1,4 @@
-
-
 # decoradores de maior grandeza - decorators 
-
 # decorators como funções sintaxe não recomendada
 
 #Exemplo 1:

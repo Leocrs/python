@@ -1,6 +1,4 @@
-
 #funções com parametro padrão (default) onde passagem de parametro seja opcional
-
 #Exemplo de função com parametro padrão onde a passagem de parametro obrigatória 
 
 def soma(a=0, b=0, c=0):

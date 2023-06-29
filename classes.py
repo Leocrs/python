@@ -1,7 +1,5 @@
 
-
 # class é uma classe de objetos (instancias)
-
 # classes são objetos e instancias de objetos (instancias)
 # atributos e métodos são objetos e instancias de objetos (instancias)
 # metodos são objetos e instancias de objetos (instancias)

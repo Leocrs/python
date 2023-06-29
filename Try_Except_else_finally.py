@@ -1,5 +1,4 @@
- 
-# try: é um bloco de código que permite tratar exceções.
+ # try: é um bloco de código que permite tratar exceções.
 # except: esse bloco de código permite tratar exceções.
 # else: esse bloco de código permite tratar exceções.
 # finally: esse bloco de código permite tratar exceções.

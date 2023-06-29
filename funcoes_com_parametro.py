@@ -1,4 +1,3 @@
-
 #Funções com parâmetro (argumentos) recebidos pelo usuário em uma função    
 #refaturando uma função
 def raiz_quadrado(numero):

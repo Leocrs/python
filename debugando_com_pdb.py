@@ -1,4 +1,3 @@
-
 # debugger é um modo de interagir com o python para ver o que está sendo executado no momento da execução do código.
 # bug = erro de sintaxe ou erro de execução
 

@@ -1,6 +1,5 @@
   
 # Erros mais comuns em Python são as exceções.
-
 # syntax error -> erro de sintaxe (erro de sintaxe) ocorre quando um programa não está compilando corretamente.
 
 #exemplo 1

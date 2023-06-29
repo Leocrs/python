@@ -1,4 +1,3 @@
-
 # default_dict é um dicionário vazio.
 # Ao criar um dicionário, o dicionário será inicializado com um valor padrão. nós pode definir um valor padrão para cada chave.
 # um valor padrão pode ser definido de acordo com a necessidade do usuário. default_dict[chave] = valor

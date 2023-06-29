@@ -1,4 +1,3 @@
-
 # reduce is a built-in function in python	é uma funcao que recebe uma funcao como argumento e retorna outra funcao
 
 dados = ['a1','a2','a3','a4']

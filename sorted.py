@@ -1,10 +1,6 @@
-"""  
-sorted é uma função que retorna uma lista ordenada.
+ 
+#sorted é uma função que retorna uma lista ordenada.
 
-
-
-
-"""
 #exemplo 1
 
 nomes = ('João', 'Maria', 'José', 'Ana, karina')

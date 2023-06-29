@@ -1,12 +1,9 @@
 # loop: for:
 # Lopp: é uma estrutura de repetição.
 # For: é uma dessas estruturas.
-
 # Python
-
 # for item in interavel:
 # //execução do loop
-
 # Utilizamos loop para interar sibre sequencias ou sobre valores iteraveis.
 
 # EX: iteráveis:

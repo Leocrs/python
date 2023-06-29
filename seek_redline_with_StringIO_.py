@@ -1,5 +1,3 @@
-
-
 # Forma de abrir arquivos em Python
 
 arquivo = open('Texto_Basico.txt', 'r' ) # abre o arquivo codigos_moedas.txt no modo de leitura

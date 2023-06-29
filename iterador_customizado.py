@@ -1,8 +1,4 @@
-
-
 # Escrevendo o nosso itarador personalizado
-
-
     
 class Contador:
     def __init__(self , menor, maior):

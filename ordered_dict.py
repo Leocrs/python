@@ -1,4 +1,3 @@
-
 # ordered_dict é um dicionário com chave e valor ordenado garantido.
 
 dicionario = {"a":1, "b":2, "c":3}

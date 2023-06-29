@@ -1,4 +1,3 @@
-
 # Tipos boolean:
 
 Verdadeiro = True  # ou 

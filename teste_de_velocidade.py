@@ -1,5 +1,3 @@
-
-
 # Teste de velocidade com expressões geradoras 
 
 import time # importa a biblioteca time

@@ -42,10 +42,7 @@ class Acesso:
 # user2 =Acesso('eu@gmail.com', '456')
 # user1.mostra_email()
 # user2.mostra_email()
-
-
 # Atributos de Classe
-
 # Atributos de classe são item declarados, geralmente já inicializamos um valor inicial para aquele atributo.
 
 class Produto:

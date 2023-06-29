@@ -1,4 +1,3 @@
-    
 # named_tuple = tuple() é uma tupla não ordenada
 
 tupla = (1, 2, 3)

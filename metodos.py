@@ -3,6 +3,9 @@
 # Em python dividimos os métodos em dois grupos: métodos de classe e métodos de instância.
 # Metodos de instância: 
 # O método __init__ é executado sempre que um objeto é instanciado. ou seja a partir da classe.
+# Todo elemento em Python que inicia e finaliza com um duplo '__' é chamado de underline dunder (double Underline).
+
+
 
 class Lampada:
     def __init__(self, cor, voltagem, luminosidade):

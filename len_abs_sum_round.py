@@ -1,4 +1,3 @@
-
 # len = é número de elementos de una lista
 # sum = somar todos os elementos de una lista
 # round = redondear os elementos de uma lista
