@@ -1,6 +1,5 @@
 # Estruturas condicionais   if, else, elif
 
-
 # If e Else e Elif
 idade = 7
 if idade < 18:
