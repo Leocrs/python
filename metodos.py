@@ -5,8 +5,6 @@
 # O método __init__ é executado sempre que um objeto é instanciado. ou seja a partir da classe.
 # Todo elemento em Python que inicia e finaliza com um duplo '__' é chamado de underline dunder (double Underline).
 
-
-
 class Lampada:
     def __init__(self, cor, voltagem, luminosidade):
         self.__cor = cor
@@ -33,13 +31,29 @@ class Produto:
         self.__descricao = descricao
         Produto.contador = self.__id
         
+    def desconto(self, percentual):
+        return self.__preco * (100 - percentual/100)
+        
 class Usurio:
+    
+    contador = 0
+    @classmethod
+    def nome_completo(cls, nome, sobrenome):
+        print(f"Seu nome completo é: {nome} {sobrenome}")
     def __init__(self, nome, senha, email):
         self.__nome = nome
         self.__senha = senha   
         self.__email = email
         
-  
+video_game = Produto('Super Mario', 'Super Mario', 50)
+print(video_game.desconto(50))    
+
+ # Métodos de Classe são conhecidos em Python como método estatico em outras linguagens. 
+ 
+user = Usurio('Leonardo Campos', '123', 'leonnardo_campos@gmail.com')
+user.nome_completo('Leonardo', 'Campos')
+ 
+ 
         
 
         
