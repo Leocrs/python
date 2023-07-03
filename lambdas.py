@@ -1,5 +1,7 @@
-#Utilizando lambdas é uma funçao anonima
-#Função em Python
+"""   
+Utilizando lambdas é uma função anonima
+
+Função em Python
 
 def soma(a, b):
     return a + b
@@ -12,34 +14,27 @@ def funcao2(x):
     return 3 * x + 1
 print(funcao2(7))
 
-#######################################################################
-
-# exemplo de uma funçao lambda
+# exemplo de uma função lambda
 soma = lambda x, y: x + y
 print(soma(2, 3))
 
 lambda x: x + 1
 print(funcao(2))
 
-#####################################################################
-
-# Como utilizar a expressão lambda em uma funçao
+# Como utilizar a expressão lambda em uma função
 soma = lambda x, y: x + y
 print(soma(2, 3))
 
-#####################################################################
-
- #Podemos ter expressa~o lambda em uma funçao com multiplas entradas
+ # Podemos ter expressão lambda em uma função com multiplas entradas
 
 nome_completo = lambda nome, sobrenome: nome.title() + ' ' + sobrenome.strip().title()
-print(nome_completo('joa~o','maria'))
-print(nome_completo('maria','joa~o'))
-print(nome_completo('jOa~o','mAria'))
-print(nome_completo('jOa~o',     'mARIA'))
+print(nome_completo('joão','maria'))
+print(nome_completo('maria','joão'))
+print(nome_completo('jOão','mAria'))
+print(nome_completo('jOão',     'mARIA'))
 
-#####################################################################
 
-#Em funçoes Python podemos ter expressa~o lambda em uma funcao com multiplas entradas
+# Em funçoes Python podemos ter expressão lambda em uma função com multiplas entradas
 
 amar = lambda: " Como não amar Pyton?"
 uma = lambda x: 3 * x +1
@@ -51,42 +46,16 @@ print(uma(1))
 print(duas(1, 1))
 print(tres(2, 3, 4))
 print(numero(1))
-#Se passarmos mais argumentos, a funcao irá retornar a expressa~o type error
-
-######################################################################
+# Se passarmos mais argumentos, a função irá retornar a expressão type error
     
-# Exemplo de uma funçao lambda tradicional
+# Exemplo de uma função lambda tradicional
 lista_autores = ["Mario de andrade", "Clarice Lispector", "Bianca de Almeida", "Machado de Assis", "Zibia Gasparetto", "Antonio de Paiva"]
 lista_autores.sort(key=lambda sobrenome: sobrenome.split(" ")[-1].lower())
 lista_autores = sorted(lista_autores)
-print(lista_autores) 
-
-#####################################################################
-
-# Exemplo de uma funçao lambda tradicional
-lista_autores = ["Mario de andrade", "Clarice Lispector", "Bianca de Almeida", "Machado de Assis", "Zibia Gasparetto", "Antonio de Paiva"]
-lista_autores.sort(key=lambda sobrenome: sobrenome.split(" ")[-1].lower())
-lista_autores = sorted(lista_autores)
-print(lista_autores)
-
-#####################################################################
+print(lista_autores)    
+"""
 
 
-preco =1000 #preço do produto com desconto de 30%
-def calcular_imposto(preco):
-    return preco * 0.3
-print(calcular_imposto(preco))
-
-calcular_imposto = lambda preco: preco * 0.3
-print(calcular_imposto(preco))
-
-calcular_imposto = lambda x: x * 0.3
-print(calcular_imposto(preco))
-
-# forma mais simples de criar uma funçao lambda em uma funcao
-precos = [1000, 2000, 3000, 4000, 5000, 6000] # lista de precos
-(impostos) = list(map(lambda x: x * 0.3, precos)) # desconto de 30%
-print(impostos)
 
 
 
