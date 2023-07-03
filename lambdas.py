@@ -1,7 +1,7 @@
-"""   
-Utilizando lambdas é uma função anonima
+  
+#Utilizando lambdas é uma função anonima
 
-Função em Python
+#Função em Python
 
 def soma(a, b):
     return a + b
@@ -53,7 +53,7 @@ lista_autores = ["Mario de andrade", "Clarice Lispector", "Bianca de Almeida", "
 lista_autores.sort(key=lambda sobrenome: sobrenome.split(" ")[-1].lower())
 lista_autores = sorted(lista_autores)
 print(lista_autores)    
-"""
+
 
 
 
