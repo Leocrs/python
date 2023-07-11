@@ -15,6 +15,6 @@ with open('filmes.csv', 'w') as arquivo:
             ano = input('Digite o ano do filme: ')
             diretor = input('Digite o diretor do filme: ')
             escritor_csv.writerow([filme, ano, diretor])
-        
+
     
     
