@@ -2,6 +2,7 @@
 
 import unittest 
 
+
 from atividades import comer, dormir, eh_engracada
  
 class Atividadesunitest(unittest.TestCase):
@@ -37,8 +38,18 @@ class moduloUnitest(unittest.TestCase):
     def tearDown(self) -> None:
         # Configurações do teardown
         pass  
+     
+from robo import robo
+
+class RoboTestes(unittest.TestCase):
     
-    
+    def carregar (self):
+        megaman = robo('Megaman', bateria=50)
+        megaman.carregar()
+        self.assertEqual(megaman.bateria, 100)
+
+if __name__ == '__main__':
+    unittest.main()
     
 
 
