@@ -2,7 +2,7 @@
 
 import unittest 
 
-from atividades import comer, dormir
+from atividades import comer, dormir, eh_engracada
  
 class Atividadesunitest(unittest.TestCase):
     def test_comer(self):
@@ -12,7 +12,11 @@ class Atividadesunitest(unittest.TestCase):
     def test_dormir (self):
         self.assertEqual(dormir('gato', True), 'gato está dormindo')
         self.assertEqual(dormir('gato', False), 'gato está dormindo')
-    
+        
+    def test_eh_engracada (self):
+        self.assertEqual(eh_engracada('gato', True), 'gato está engracada')
+    #   self.assertFalse(eh_engracada('gato', False), 'gato não está engracada')
+  
  
 if __name__ == '__main__':
   unittest.main()
