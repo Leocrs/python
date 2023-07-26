@@ -5,8 +5,7 @@ import time # Biblioteca para manipulação de tempo
 import os # Biblioteca para manipulação de arquivos
 import shutil # Biblioteca para manipulação de arquivos
 pyautogui.PAUSE = 1 # tempo de pausa segundos entre tentativas
-pyautogui.alert(" O programa vai começar, aguarde...") # mensagem de alerta 
-
+#pyautogui.alert(" O programa vai começar, aguarde...") # mensagem de alerta 
 
 # # abrir o gooqle drive na pasta de backup
 pyautogui.press('winleft') # clica na tecla windows da esquerda
@@ -30,9 +29,7 @@ pyautogui.dragTo(x=550, y=591, duration=2)  # clica na posição x=550, y=591
 pyautogui.hotkey('alt','tab') # clica no alt + tab
 time.sleep(1) # espera 1 segundo
 pyautogui.mouseUp()  # clica no mouse
-pyautogui.alert("O programa terminou!") # mensagem de alerta  
-
-
+#pyautogui.alert("O programa terminou!") # mensagem de alerta  
 #Comando nessessario para copiar o arquivo na posição exata via captura de tela
 # time.sleep(5)
 # from turtle import position

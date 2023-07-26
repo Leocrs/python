@@ -1,5 +1,6 @@
 # Programa de BOT de backup automatico de arquivos
 
+
 import pyautogui # Biblioteca para manipulação de tela
 import time # Biblioteca para manipulação de tempo
 import os # Biblioteca para manipulação de arquivos
