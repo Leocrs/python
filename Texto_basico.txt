@@ -1,2 +1,0 @@
-Escrever dados em arquivo é muito facil. 
-Essa é a ultima linha escrita de texto. 
