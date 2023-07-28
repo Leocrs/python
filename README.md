@@ -1,2 +1,2 @@
-# estudo-em-python
-Estudo em Python do básico ao avançado
+# hashtag_programacao
+ hashtag_programacao Cursos rapidos

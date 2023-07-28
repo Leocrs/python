@@ -1,9 +1,17 @@
-from pegar_cotacao import pegar_cotacao_atual
+# Framework Flask -> é uma ferramenta de desenvolvimento web sites
 
-with open("precos.txt", "r") as arquivo:
-    lista_precos = arquivo.read().split("\n")
+from flask import Flask, render_template
 
-for linha in lista_precos:
-    mercadoria, valor, moeda = linha.split(",")
-    cotacao = pegar_cotacao_atual(moeda, "BRL")
-    print(f"{mercadoria} tá custando R${float(cotacao) * float(valor):,.2f} hoje")
+app = Flask(__name__)
+
+# Criar a nossa 1ª pagina = 1ª rota
+@app.route("/")
+def homepage():
+    return render_template("homepage.html")
+
+# Roda o nosso app
+app.run()
+
+
+
+

@@ -1,52 +1,70 @@
+# Passo a passo do projeto
+# Passo 1: Entrar no sistema da empresa 
+    # https://dlp.hashtagtreinamentos.com/python/intensivao/login
+
+import pyautogui
+import time
+
+# pyautogui.write -> escrever um texto
+# pyautogui.press -> apertar 1 tecla
+# pyautogui.click -> clicar em algum lugar da tela
+# pyautogui.hotkey -> combinação de teclas
+pyautogui.PAUSE = 0.3
+
+# abrir o navegador (chrome)
+pyautogui.press("win")
+pyautogui.write("chrome")
+pyautogui.press("enter")
+
+# entrar no link 
+pyautogui.write("https://dlp.hashtagtreinamentos.com/python/intensivao/login")
+pyautogui.press("enter")
+time.sleep(3)
+
+
+# Passo 2: Fazer login
+# selecionar o campo de email
+pyautogui.click(x=685, y=451)
+# escrever o seu email
+pyautogui.write("pythonimpressionador@gmail.com")
+pyautogui.press("tab") # passando pro próximo campo
+pyautogui.write("sua senha")
+pyautogui.click(x=955, y=638) # clique no botao de login
+time.sleep(3)
+
+# Passo 3: Importar a base de produtos pra cadastrar
 import pandas as pd
-import win32com.client as win32
 
-# importar a base de dados
-tabela_vendas = pd.read_excel('Vendas.xlsx')
+tabela = pd.read_csv("produtos.csv")
 
-# visualizar a base de dados
-pd.set_option('display.max_columns', None)
-print(tabela_vendas)
+print(tabela)
 
-# faturamento por loja
-faturamento = tabela_vendas[['ID Loja', 'Valor Final']].groupby('ID Loja').sum()
-print(faturamento)
-
-# quantidade de produtos vendidos por loja
-quantidade = tabela_vendas[['ID Loja', 'Quantidade']].groupby('ID Loja').sum()
-print(quantidade)
-
-print('-' * 50)
-# ticket médio por produto em cada loja
-ticket_medio = (faturamento['Valor Final'] / quantidade['Quantidade']).to_frame()
-ticket_medio = ticket_medio.rename(columns={0: 'Ticket Médio'})
-print(ticket_medio)
-
-# enviar um email com o relatório
-outlook = win32.Dispatch('outlook.application')
-mail = outlook.CreateItem(0)
-mail.To = 'leonnardo_campos@gmail.com'
-mail.Subject = 'Relatório de Vendas por Loja'
-mail.HTMLBody = f'''
-<p>Prezados,</p>
-
-<p>Segue o Relatório de Vendas por cada Loja.</p>
-
-<p>Faturamento:</p>
-{faturamento.to_html(formatters={'Valor Final': 'R${:,.2f}'.format})}
-
-<p>Quantidade Vendida:</p>
-{quantidade.to_html()}
-
-<p>Ticket Médio dos Produtos em cada Loja:</p>
-{ticket_medio.to_html(formatters={'Ticket Médio': 'R${:,.2f}'.format})}
-
-<p>Qualquer dúvida estou à disposição.</p>
-
-<p>Att.,</p>
-<p>Lira</p>
-'''
-
-mail.Send()
-
-print('Email Enviado')
+# Passo 4: Cadastrar um produto
+for linha in tabela.index:
+    # clicar no campo de código
+    pyautogui.click(x=653, y=294)
+    # pegar da tabela o valor do campo que a gente quer preencher
+    codigo = tabela.loc[linha, "codigo"]
+    # preencher o campo
+    pyautogui.write(str(codigo))
+    # passar para o proximo campo
+    pyautogui.press("tab")
+    # preencher o campo
+    pyautogui.write(str(tabela.loc[linha, "marca"]))
+    pyautogui.press("tab")
+    pyautogui.write(str(tabela.loc[linha, "tipo"]))
+    pyautogui.press("tab")
+    pyautogui.write(str(tabela.loc[linha, "categoria"]))
+    pyautogui.press("tab")
+    pyautogui.write(str(tabela.loc[linha, "preco_unitario"]))
+    pyautogui.press("tab")
+    pyautogui.write(str(tabela.loc[linha, "custo"]))
+    pyautogui.press("tab")
+    obs = tabela.loc[linha, "obs"]
+    if not pd.isna(obs):
+        pyautogui.write(str(tabela.loc[linha, "obs"]))
+    pyautogui.press("tab")
+    pyautogui.press("enter") # cadastra o produto (botao enviar)
+    # dar scroll de tudo pra cima
+    pyautogui.scroll(5000)
+    # Passo 5: Repetir o processo de cadastro até o fim
