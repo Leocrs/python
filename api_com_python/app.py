@@ -52,6 +52,18 @@ def criar_livro():
 
 
     # Exclui(id)
+@app.route('/livros/<int:id>', methods=['DELETE'])
+def excluir_livro_por_id(id):
+    for indice, livro in enumerate(livros):
+        if livro['id'] == id:
+            livros.pop(indice)
+            return jsonify(livros)
+    return jsonify({'message': 'Livro não encontrado'})
+
+
+    
+
+    
 app.run(port=5000,host='localhost', debug=True)
 
 
