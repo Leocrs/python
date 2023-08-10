@@ -202,6 +202,8 @@ Ctrl + Home / End Rola para cima / baixo
 
 #########################################
 
-Comando para criar pasta e sub pastas em projetos Django django-admin startproject core ( core é o nome escolido )
+Comando para criar pasta e sub pastas do projeto
+Django django-admin startproject core ( core é o nome escolido )
  
-Comando para criar aplicação em projetos django-admin startapp blog ( blog é o nome escolido )
+Comando para criar aplicação em projetos 
+django-admin startapp blog ( blog é o nome escolido )
