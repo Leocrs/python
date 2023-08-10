@@ -6,7 +6,7 @@
 
 # Endpoint - localhost/livros (GET) - 
 # localhost/livros/id (GET) -
-# localhost/id (PUT) - 
+# # # # localhost/id (PUT) - 
 # localhost/livros/id (DELETE)
 
 # Quais recursos podem ser acessados
@@ -51,7 +51,7 @@ def criar_livro():
     return jsonify(livros)
 
 
-    # Exclui(id)
+# Exclui(id)
 @app.route('/livros/<int:id>', methods=['DELETE'])
 def excluir_livro_por_id(id):
     for indice, livro in enumerate(livros):
@@ -65,5 +65,6 @@ def excluir_livro_por_id(id):
 
     
 app.run(port=5000,host='localhost', debug=True)
+
 
 
