@@ -21,3 +21,14 @@ data_de_compra = datetime.datetime.now()
 print(data_de_compra)
 data_de_vencimento = data_de_compra + datetime.timedelta(days=10)
 print(f' O boleto vence em {data_de_vencimento}')
+
+print(data_de_compra)
+
+print(data_de_vencimento)
+
+# exemplo 1
+
+# data_de_compra = datetime.datetime.now()
+
+print(data_de_compra)       
+

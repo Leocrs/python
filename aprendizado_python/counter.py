@@ -24,3 +24,4 @@ Viola fica perto, olhando sua dona e seu filhotinho com um olhar mais carinhoso 
 resposta = Counter(texto.split()) 
 print(resposta.most_common(5))
 help(Counter)
+
