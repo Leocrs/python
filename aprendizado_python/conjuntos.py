@@ -60,7 +60,7 @@ conjuntos.add(5)
 conjuntos.add(5) # não duplica e nem gera erro, é ignorado e não add.
 conjuntos.add(6)
 print(conjuntos)
-print(conjuntos),conjuntos.remove(4),print(conjuntos)
+#print(conjuntos),conjuntos.remove(4),print(conjuntos)
 
 ####################################################################
 
