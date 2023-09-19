@@ -21,10 +21,7 @@ class Usuario:
         self.nome = nome
         self.senha = senha
         
-class Produto:
-    def __init__(self, nome, preco):
-        self.nome = nome
-        self.preco = preco
+
         
         
 class Acesso:
@@ -65,7 +62,7 @@ print(P2.preco)
 print(Produto.imposto) # Acesso de atributo de classe
 # Não precisamos fazer um atributo de classe para cada instância de uma classe
 
-P2.peso = '10kg'
+
 
 
 
