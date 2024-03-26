@@ -44,3 +44,32 @@ print(1%2)
 print(1**2)
 
 ###############################################################
+
+# Operadores de Comparação (==)
+
+# Igual ==
+print(1==1) # True
+print(1==2) # False
+
+# Diferente !=
+print(1!=1) # False
+print(1!=2) # True
+
+# Maior >
+print(1>1) # False
+print(1>2) # False
+
+# Menor <
+print(1<1) # False
+print(1<2) # True       
+
+# Maior ou Igual >=
+print(1>=1) # True
+print(1>=2) # False
+
+# Menor ou Igual <=
+print(1<=1) # True
+print(1<=2) # True
+
+###############################################################
+
