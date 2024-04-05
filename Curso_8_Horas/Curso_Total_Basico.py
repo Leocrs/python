@@ -125,5 +125,5 @@ nome = 'Leonardo'
 print(nome) # modo 1 de printar
 print('Leonardo') # modo 2 de printar
 print (nome, 'Campos') # modo 3 de printar
-
+print('Olá ' + (nome) + ' Campos' + ' ao curso de Python! ') # modo 4 de printar com concatenação
 
