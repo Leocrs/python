@@ -122,8 +122,9 @@
 # Sintaxe
 
 nome = 'Leonardo'
+anos = 47
 print(nome) # modo 1 de printar
 print('Leonardo') # modo 2 de printar
 print (nome, 'Campos') # modo 3 de printar
 print('Olá ' + (nome) + ' Campos' + ' ao curso de Python! ') # modo 4 de printar com concatenação
-mensagem_formata = 'Leonardo tem {0} anos format{47}' # modo 5 de printar com formatação
+print(f'Olá {nome} Campos, você tem {anos} anos!') # modo 5 de printar com formatação
