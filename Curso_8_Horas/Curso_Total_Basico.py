@@ -123,8 +123,10 @@
 
 nome = 'Leonardo'
 anos = 47
+numero = 125.579637
 print(nome) # modo 1 de printar
 print('Leonardo') # modo 2 de printar
 print (nome, 'Campos') # modo 3 de printar
 print('Olá ' + (nome) + ' Campos' + ' ao curso de Python! ') # modo 4 de printar com concatenação
 print(f'Olá {nome} Campos, você tem {anos} anos!') # modo 5 de printar com formatação
+print(f'O valor do seu numero é {numero:.2f}') # modo 6 de printar com formatação
