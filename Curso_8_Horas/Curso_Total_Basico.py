@@ -61,7 +61,7 @@
 
 # # Menor <
 # print(1<1) # False
-# print(1<2) # True       
+# print(1<2) # True
 
 # # Maior ou Igual >=
 # print(1>=1) # True
@@ -88,7 +88,7 @@
 # print(n1, ' É maior que ', n2, '?', z, '\n')
 
 # y = n1 != n2
-# print('São diferentes?', y, '\n') 
+# print('São diferentes?', y, '\n')
 # ###############################################################
 
 # # Operadores logicos (and, or, not)
@@ -103,17 +103,52 @@
 ###############################################################
 # condicional if, elif, else
 
-# Programinha de Media de nota de alunos
-n1 = n2 = 0.0
-media = 0.0
-n1 = float(input('Digite um numero:'))
-n2 = float(input('Digite outro numero:'))   
+# # Programinha de Media de nota de alunos
+# n1 = n2 = 0.0
+# media = 0.0
+# n1 = float(input('Digite um numero:'))
+# n2 = float(input('Digite outro numero:'))
 
-media = (n1 + n2) / 2
-print(media)
-if media >= 7:
-    print('Aprovado')
-elif media >= 5:
-    print('Recuperacao')
-else:
-    print('Reprovado')
+# media = (n1 + n2) / 2
+# print(media)
+# if media >= 7:
+#     print('Aprovado')
+# elif media >= 5:
+#     print('Recuperacao')
+# else:
+#     print('Reprovado')
+#############################################################
+
+# Laços de repetição (for, while)
+
+# num = 1
+# while num <= 10: # 10 vezes
+#     print(num) # 1 2 3 4 5 6 7 8 9 10
+#     num += 1 # 2 3 4 5 6 7 8 9 10 11
+#     print("Laço encerrado!")
+
+#############################################################
+
+# nome = None
+# while True:
+#     print("Digite seu nome, ou X para sair:") # X para sair
+#     nome = input() # Entrada de dados
+#     if nome == 'x' or nome == 'X': # Se o nome for X ou x para sair
+#         break # Encerra o loop
+# print ("Até logo!")
+
+#############################################################
+
+# Laço for
+
+# for num in range(1, 11):
+#     print(num)
+
+
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+for num in lista:
+    print(num)
+
+for num in range(0, 10):
+    print(num)
+    
