@@ -231,10 +231,25 @@ import random # Importando biblioteca random
 # for planeta in planetas:
 #      print(planeta)
 
-bebidas = [] # criando lista
-for indice in range(5): # 0 1 2 3 4
-    print (f'Insira o nome de uma bebida:') # perguntando nome da bebida
-    bebidas.append(input()) # Acrescentando valor na lista
-bebidas.sort() # colocando em ordem
-print(bebidas) # exibindo a lista
+# bebidas = [] # criando lista
+# for indice in range(5): # 0 1 2 3 4
+#     print (f'Insira o nome de uma bebida:') # perguntando nome da bebida
+#     bebidas.append(input()) # Acrescentando valor na lista
+# bebidas.sort() # colocando em ordem
+# print(bebidas) # exibindo a lista
+
+#############################################################
+
+# tuplas
+ 
+# tupla = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] # Criando tupla, e a tupla e imutavel
+# print(tupla)
+# tupla = tuple(tupla) # Transformando em tupla
+# print(tupla) 
+
+#############################################################
+
+# Matematica 
+
+
 
