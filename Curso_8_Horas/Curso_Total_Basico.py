@@ -413,8 +413,8 @@ import random # Importando biblioteca random
 #    print(a+b)
 # soma(2, 3)
 
-def munti(x, y):
+def mult(x, y):
     return x * y
-print(munti(2, 3))
+print(mult(2, 3))
 
 
