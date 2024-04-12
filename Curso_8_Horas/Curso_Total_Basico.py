@@ -482,3 +482,12 @@ import random # Importando biblioteca random
 # print(var_global)
 # print(var_local)
 
+##############################################################
+
+# Exceções - Tratamento de erros
+
+try: # bloco de tratamento de erros
+     x = int(input('digite um valor: '))
+     print(x)
+except ValueError: # bloco de tratamento de erros
+     print('Voce digitou um valor inválido')
