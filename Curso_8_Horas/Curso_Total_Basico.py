@@ -400,5 +400,21 @@ import random # Importando biblioteca random
 
 # Funções - Modularização de código, Reuso de código, Legibilidade de código
 
+#def<nome_da_funcao>(parametros):
+#    bloco_da_funcao
+
+# def mensagem(msg):
+#     print('-' * 30)
+#     print(msg)
+#     print('-' * 30)
+# mensagem('Ola, Mundo!')
+
+# def soma(a, b):
+#    print(a+b)
+# soma(2, 3)
+
+def munti(x, y):
+    return x * y
+print(munti(2, 3))
 
 
