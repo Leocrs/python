@@ -154,7 +154,7 @@
 
 # for num in range(0, 10, 2): # 0 2 4 6 8
 #     print(num) # 0 2 4 6 8
-     
+
 # nome = input("Digite seu nome: ") # 0 1 2 3 4 5 6 7 8 9
 # for x in range(10): # 0 1 2 3 4 5 6 7 8 9
 #     print(f'{x+1} {nome}')
@@ -167,7 +167,7 @@
 
 #############################################################
 
-# laços_encadeados 
+# laços_encadeados
 
 # for cont_externo in range(1, 6):
 #     print(f' \nRodada  {cont_externo}') # \n quebra de linha \t tabulac{cont_externo})
@@ -185,7 +185,7 @@
 
 #############################################################
 
-# modulos 
+# modulos
 
 #import math # Importando biblioteca math
 # num = math.sqrt(81) # raiz quadrada
@@ -212,14 +212,14 @@ import random # Importando biblioteca random
 # print(f'Numero gerado: {round(random.uniform(1, 100), 2)}') # 1.0 1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9
 
 #############################################################
- 
+
  # listas
 
-# lista1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+# lista1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # lista2 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 # #for num in lista1:
 # valores = lista1 + lista2  # Concatenando listas
-# #print(valores)    
+# #print(valores)
 # #print(len(valores)) # Tamanho da lista
 # # print(valores[0]) # Primeiro valor da lista
 # valores.append(11) # Acrescentando valor na lista
@@ -241,15 +241,15 @@ import random # Importando biblioteca random
 #############################################################
 
 # tuplas
- 
+
 # tupla = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] # Criando tupla, e a tupla e imutavel
 # print(tupla)
 # tupla = tuple(tupla) # Transformando em tupla
-# print(tupla) 
+# print(tupla)
 
 #############################################################
 
-# Matematica 
+# Matematica
 
 # funçoes built-in
 
@@ -278,10 +278,10 @@ import random # Importando biblioteca random
 
 ##############################################################
 
-# string 
+# string
 
 # nome = 'Leonardo'
-# sobrenome = 'Campos' 
+# sobrenome = 'Campos'
 # nome_completo = nome + ' ' + sobrenome # Concatenando string
 # print(nome_completo)
 
@@ -331,7 +331,7 @@ import random # Importando biblioteca random
 
 # texto = """docstrings - documentando funções com docstrings
 # OBS: podemos ter acesso a funções com docstrings utilizando a função help() __doc__"""
-# print(texto) 
+# print(texto)
 
 ###############################################################
 
@@ -340,7 +340,7 @@ import random # Importando biblioteca random
 # frutas = {'maca': 10, 'banana': 8, 'laranja': 5}
 # print(frutas)
 # print(frutas['maca']) # acessando valor pela chave
-# print(frutas.get('laranja')) 
+# print(frutas.get('laranja'))
 # print(frutas.keys()) # Retorna todas as chaves
 # print(frutas.values()) # Retorna todos os valores
 # print(frutas.items()) # Retorna todas as chaves e valores
@@ -350,7 +350,7 @@ import random # Importando biblioteca random
 
 # # adicionando valores
 # frutas ['uva'] =3
-# print(frutas)   
+# print(frutas)
 
 # # excluindo valores
 # frutas ['laranja'] =0 # excluindo valores
@@ -413,8 +413,72 @@ import random # Importando biblioteca random
 #    print(a+b)
 # soma(2, 3)
 
-def mult(x, y):
-    return x * y
-print(mult(2, 3))
+# def mult(x, y):
+#     return x * y
+# print(mult(2, 3))
 
+
+# def div(k, j):
+#     if j != 0: # se j for diferente de zero
+#         return k / j
+#     else:
+#         return 'Impossível dividir por zero!'
+
+# if __name__ == '__main__': # __name__ é o nome da classe
+#     a = int(input('digite o valor de a: '))
+#     b = int(input('digite o valor de b: '))
+
+#     r = div(a, b) # chamando a função
+#     print(f'a divisão de {a} por {b} é {r}')
+
+# def quadrado(valor):
+#     quadrados =[]
+#     for x in valor:
+#         quadrados.append(x ** 2)
+#     return quadrados
+
+# def contar(caracter, numero=11):
+#     for i in range(1, numero):
+#         print(caracter)
+
+# if __name__ == '__main__':
+    # contar(caracter='*', numero=5) # Os nome não precisam ser iguais a variaveis basta está na ordem correta da função
+
+# x = 5
+# y = 7
+# z = 3
+# def soma(a, b, c =0):
+#     if c == 0:
+#         return a * b
+#     else:
+#         return a + b + c
+
+# if __name__ == '__main__':
+#     res = soma(x, y, z)
+#     print(res)
+
+
+#     valores = [1, 2, 3, 4, 5]
+#     quadrados = quadrado(valores)
+# for x in quadrado(valores):
+#     print(x)
+
+##############################################################
+
+# Escopo - Variaveis Globais e Locais
+
+# var_global = " Curso 8 Horas de Python" # Variavel Global"
+# def escreve_texto():
+#     global var_global
+#     var_global = 'Curso muito bom para iniciantes e revisão'
+#     var_local = "Curso Total Básico ao avançado" 
+#     print(f'Variavel Global: {var_global}') 
+#     print(f'Variavel Local: {var_local}')    
+
+# if __name__ == '__main__':
+#     print(escreve_texto())
+#     escreve_texto()
+
+# print(var_global)
+# print(var_local)
 
