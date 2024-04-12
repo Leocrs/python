@@ -337,26 +337,64 @@ import random # Importando biblioteca random
 
 # Dicionarios - Conjunto de chaves e valores
 
-frutas = {'maca': 10, 'banana': 8, 'laranja': 5}
-print(frutas)
-print(frutas['maca']) # acessando valor pela chave
-print(frutas.get('laranja')) 
-print(frutas.keys()) # Retorna todas as chaves
-print(frutas.values()) # Retorna todos os valores
-print(frutas.items()) # Retorna todas as chaves e valores
+# frutas = {'maca': 10, 'banana': 8, 'laranja': 5}
+# print(frutas)
+# print(frutas['maca']) # acessando valor pela chave
+# print(frutas.get('laranja')) 
+# print(frutas.keys()) # Retorna todas as chaves
+# print(frutas.values()) # Retorna todos os valores
+# print(frutas.items()) # Retorna todas as chaves e valores
 
-for chave in frutas: # Retorna todas as chaves
-    print(frutas[chave]) # Retorna todos os valores
+# for chave in frutas: # Retorna todas as chaves
+#     print(frutas[chave]) # Retorna todos os valores
 
-# adicionando valores
-frutas ['uva'] =3
-print(frutas)   
+# # adicionando valores
+# frutas ['uva'] =3
+# print(frutas)   
 
-# excluindo valores
-frutas ['laranja'] =0 # excluindo valores
-print(frutas)
+# # excluindo valores
+# frutas ['laranja'] =0 # excluindo valores
+# print(frutas)
 
-del frutas ['laranja'] # excluindo valores
-print(frutas)
+# del frutas ['laranja'] # excluindo valores
+# print(frutas)
 
+##############################################################
+
+# sets - Conjunto de valores unicos
+
+# frutas = {'maca', 'banana', 'laranja', 'maca', 'banana'}
+# print(frutas)
+# print(len(frutas)) # Retorna o tamanho
+# print('maca' in frutas) # Verificando se existe valor na string
+
+# # adicionando valores
+# frutas.add('uva') # adicionando valores
+# print(frutas) # adicionando valores
+
+# # excluindo valores
+# frutas.remove('banana') # excluindo valores
+# print(frutas) # excluindo valores
+
+# for frutas in frutas: # Retorna todos os valores
+#     print(frutas.upper()) # Retorna todos os valores
+
+
+# astros1 = {'Lua', 'Sol', 'Mercurio', 'Venus', 'Terra', 'Marte', 'Jupiter', 'Saturno'}
+# astros2 = {'Makemake', ' Haumea', ' Eris', ' Callisto', 'Lua'}
+
+# # print(astros)
+# # print(astros, end='') # Retorna todos os valores
+
+# # astros_set = set(astros) # Retorna todos os valores
+# # print(astros_set) # Retorna todos os valores
+
+# print(astros1 in astros2) # Retorna todos os valores se existir
+# print(astros1 != astros2) # Retorna todos os valores se existir
+# print(astros1.union(astros2)) # Retorna todos os valores se existir
+# print(astros1.intersection(astros2)) # Retorna todos os valores se existir
+# print(astros1.difference(astros2)) # Retorna todos os valores se existir
+# print(astros1.symmetric_difference(astros2)) # Retorna todos os valores se existir
+
+##############################################################
 
