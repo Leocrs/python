@@ -398,3 +398,7 @@ import random # Importando biblioteca random
 
 ##############################################################
 
+# Funções - Modularização de código, Reuso de código, Legibilidade de código
+
+
+
