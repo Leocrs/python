@@ -530,3 +530,20 @@ import random # Importando biblioteca random
 # else:
 #         print(f'O fatorial de {n1} é {fatorial(n1)}') 
 
+###############################################################
+
+# função lambda
+
+# quadrado = lambda x: x ** 2
+# print(quadrado(5))
+
+# par = lambda x: x % 2 == 0
+# print(par(4))
+# print(par(5))
+
+# f_c = lambda x: (x - 32) * 5 / 9 # Formula de conversão de temperatura fahrenheit para celsius
+# print(f_c(32))
+
+
+
+###############################################################
