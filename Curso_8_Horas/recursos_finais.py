@@ -28,4 +28,18 @@ print(quadrados)
 for item in enumerate(quadrados):
     print(f' Para os indices: {item[0]} - O valor de quadrado é: {item[1]}') # Retorna um objeto enumerado (item)
 
-    
+# Gerenciamento de contexto com with
+
+# try:
+#     arquivo_texto = open('arquivo.txt', 'r', encoding='utf-8')
+#     print(arquivo_texto.read())
+# except IOError as erro:
+#     print(f"Ocorreu um erro, não foi possível abrir o arquivo: {erro}")
+# else:
+#     arquivo_texto.close()
+
+
+# with open('arquivo.txt', 'r', encoding='utf-8') as arquivo_texto:
+#     for linha in arquivo_texto:
+#         print(linha)
+   
