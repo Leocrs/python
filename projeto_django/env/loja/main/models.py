@@ -26,3 +26,18 @@ class Size(models.Model):
     def __str__(self):
         return self.title
     
+class Product(models.Model):
+    title = models.CharField(max_length=200)
+    slug = models.CharField(max_length=400)
+    detail= models.TextField()
+    specs= models.TextField()
+    price= models.PositiveIntegerFieldField()
+    marca= models.ForeignKey(Marca, on_delete=models.CASCADE)
+    category= models.ForeignKey(Category, on_delete=models.CASCADE)
+    color= models.ForeignKey(Color, on_delete=models.CASCADE)
+    size= models.ForeignKey(Size, on_delete=models.CASCADE)
+    status= models.BooleanFieldField(default=True)    
+    image= models.ImageField(upload_to='product_images')
+    def __str__(self):
+        return self.title
+    
