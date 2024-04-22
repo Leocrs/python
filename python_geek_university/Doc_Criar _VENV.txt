@@ -22,7 +22,10 @@ Exemplo:
 7 - para sair do venv
     .\venv\Scripts\deactivate
 
-
+OBSERVAÇÃO:
+Só consegui rodar chamando o cmd: como interpretador
+ e não o bash, Sempre olhar o caminho da pasta e colocar no cmd:
+ 
 
 
 
