@@ -217,3 +217,8 @@ venv\Scripts\activate
 
 
 ABRIR TERMINAL COMANDO CONTROL + "j"
+
+
+
+
+"
