@@ -18,8 +18,10 @@
         
         <form method="post">
           {% csrf_token %}
-          {{form}}
-        <button type="submit">Criar</button>
+          {{ form.as_p }}
+
+
+        <button type="submit" class="btn btn-primary">Criar</button>
 
 
         
