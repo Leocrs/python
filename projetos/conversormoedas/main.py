@@ -10,16 +10,20 @@ from tkinter import *
 from tkinter.messagebox import *
 
 # criando a janela e configurando 
-customtkinter.set_appearance_mode("dark")
-customtkinter.set_default_color_theme("dark-blue")
+customtkinter.set_appearance_mode("dark") # Modes: "System" (standard), "Dark", "Light"
+customtkinter.set_default_color_theme("dark-blue") # Themes: "blue" (standard), "green", "dark-blue
 
-janela = CTk()
-janela.geometry = ("900x900")
+janela = CTk() # janela
+janela.geometry = ("500x500") # tamanho da janela
 
 # Criar os botoes, texturas e outros elementos
-titulo = customtkinter.CTkLabel(janela)
-# Colocar todos os elementos na tela 
-# Executar a janela
+titulo = customtkinter.CTkLabel(janela) # Label para o texto Conversor de moedas
+texto_moeda_origem = customtkinter.CTkLabel(janela) # Label para selecionar a moeda de origem
 
+
+# Colocar todos os elementos na tela 
+
+
+# Executar a janela
 janela.mainloop()
 
