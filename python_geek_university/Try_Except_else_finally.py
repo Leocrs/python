@@ -8,6 +8,7 @@
 numero = int(input('Digite um número: '))
 print(f'O número digitado foi {numero}')
 
+
 try:    # O bloco de código que trata erro ao tentar digitar outros atributos que não sejam numeros 
     numero = int(input('Digite um número: '))
 except ValueError:
