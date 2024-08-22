@@ -222,3 +222,96 @@ ABRIR TERMINAL COMANDO CONTROL + "j"
 
 
 "
+
+SQL (Structured Query Language) é uma linguagem de programação projetada para gerenciar e manipular bancos de dados relacionais. Aqui estão alguns dos principais comandos de SQL:
+
+### 1. **SELECT**
+Utilizado para buscar dados em uma ou mais tabelas.
+```sql
+SELECT coluna1, coluna2 FROM tabela;
+```
+
+### 2. **INSERT**
+Usado para inserir novos registros em uma tabela.
+```sql
+INSERT INTO tabela (coluna1, coluna2) VALUES (valor1, valor2);
+```
+
+### 3. **UPDATE**
+Permite atualizar registros existentes em uma tabela.
+```sql
+UPDATE tabela SET coluna1 = valor1 WHERE condicao;
+```
+
+### 4. **DELETE**
+Remove registros de uma tabela.
+```sql
+DELETE FROM tabela WHERE condicao;
+```
+
+### 5. **CREATE TABLE**
+Cria uma nova tabela no banco de dados.
+```sql
+
+
+CREATE TABLE tabela (
+    coluna1 tipo,
+    coluna2 tipo,
+    ...
+);
+```
+
+### 6. **ALTER TABLE**
+Modifica a estrutura de uma tabela existente (adicionar, modificar ou excluir colunas).
+```sql
+ALTER TABLE tabela ADD coluna tipo;
+```
+
+### 7. **DROP TABLE**
+Remove uma tabela e todos os seus registros do banco de dados.
+```sql
+DROP TABLE tabela;
+```
+
+### 8. **JOIN**
+Utilizado para combinar linhas de duas ou mais tabelas com base em uma condição relacionada.
+```sql
+SELECT a.coluna1, b.coluna2
+FROM tabelaA a
+JOIN tabelaB b ON a.id = b.id;
+```
+
+### 9. **WHERE**
+Filtra os resultados para retornar apenas aqueles que atendem a uma condição específica.
+```sql
+SELECT * FROM tabela WHERE condicao;
+```
+
+### 10. **GROUP BY**
+Agrupa registros semelhantes em colunas, frequentemente usado com funções agregadas como COUNT, SUM, AVG, etc.
+```sql
+SELECT coluna, COUNT(*) FROM tabela GROUP BY coluna;
+```
+
+### 11. **ORDER BY**
+Ordena os resultados de uma consulta de acordo com uma ou mais colunas.
+```sql
+SELECT * FROM tabela ORDER BY coluna ASC|DESC;
+```
+
+### 12. **HAVING**
+Semelhante ao WHERE, mas é aplicado após a agregação de dados.
+```sql
+SELECT coluna, COUNT(*) 
+FROM tabela 
+GROUP BY coluna 
+HAVING COUNT(*) > valor;
+```
+
+### 13. **INDEX**
+Cria um índice em uma tabela para melhorar a velocidade das operações de consulta.
+```sql
+CREATE INDEX nome_indice ON tabela(coluna);
+```
+
+Esses são os comandos SQL mais comuns e suas funções básicas. SQL é uma linguagem poderosa e versátil, com muitos outros comandos e funcionalidades que podem ser explorados conforme a necessidade.
