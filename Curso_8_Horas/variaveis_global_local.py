@@ -16,3 +16,4 @@ if __name__ == '__main':
 
 print(var_global)
 print(var_local)
+
