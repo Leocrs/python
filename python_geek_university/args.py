@@ -46,9 +46,3 @@ soma_todos_numeros(1, 2, 3, 4, 5)
 numeros = [1, 2, 3, 4, 5]
 soma_todos_numeros(*numeros) # Para conseguir somar todos os argumentos [1, 2, 3, 4, 5] usamos o *args (*numeros) (*) é o parametro
 #Desempatando os argumentos [1, 2, 3, 4, 5] para conseguir somar todos os argumentos [1, 2, 3, 4, 5] usamos o *args (*numeros)
-
-
-    
-
-
- 
