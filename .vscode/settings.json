@@ -4,7 +4,8 @@
     "**/templates/**/*.html": "django-html",
     "emmet.includeLanguages": {
         "django-html": "html"
-    }
+    },
+    "git.ignoreLimitWarning": true
 }
 
 
