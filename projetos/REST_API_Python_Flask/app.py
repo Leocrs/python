@@ -6,8 +6,11 @@ api = Api(app)
 
 class Hoteis(Resource):
     def get(self):
-        return {'hoteis': 'Hilton, InterContinental, Hilton'}
-
+        return {'hoteis': 'meus hoteis'}
+    
 api.add_resource(Hoteis, '/hoteis')
 
-app.run(port=5000, debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
+
+    
