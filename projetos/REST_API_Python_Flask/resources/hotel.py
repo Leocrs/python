@@ -26,10 +26,11 @@ class Hotel(Resource):
             if hotel['hotel_id'] == hotel_id:
                 return jsonify({'hotel': hotel, 'message': 'Hotel encontrado com sucesso', 'status_code': 200})
         return jsonify({'error': 'Hotel não encontrado', 'message': 'Hotel não encontrado', 'status_code': 404})
+        
 
     def post(self, hotel_id):
         if any(hotel['hotel_id'] == hotel_id for hotel in hoteis):
-            return jsonify({'error': 'Hotel já existe.', 'message': 'Hotel já existe', 'status_code': 400})
+            return jsonify({'hotel': 'Hotel já existe.', 'message': 'Hotel já existe', 'status_code': 200})
 
         args = self.parser.parse_args()
         novo_hotel = {
