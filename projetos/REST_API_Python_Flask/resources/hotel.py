@@ -11,3 +11,20 @@ hoteis = [
 class Hoteis(Resource):
     def get(self):
         return {'hoteis': hoteis}  # Return the actual list of hotels
+    
+class Hotel(Resource):
+    def get(self, hotel_id):
+        for hotel in hotel_id:
+            if hotel["hotel_id"] == hotel_id:
+                return hotel
+        return {'message': 'Hotel not found'}, 404  # Return a 404 error if the hotel is not found
+
+    def post(self, hotel_id):
+        pass
+        
+
+    def put(self, hotel_id):
+        pass
+
+    def delete(self, hotel_id):
+        pass
