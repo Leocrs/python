@@ -1,4 +1,8 @@
-from flask_restful import Resource, reqparse  
+from flask import Flask  
+from flask_restful import Api, Resource, reqparse  
+
+app = Flask(__name__)  
+api = Api(app)  
 
 hoteis = [  
     {'hotel_id': 'alpha', 'nome': 'Alpha Hotel', 'estrelas': 4.3, 'diaria': 420.34, 'cidade': 'Rio de Janeiro'},  
@@ -55,4 +59,19 @@ class Hotel(Resource):
     def delete(self, hotel_id):  
         global hoteis  
         hoteis = [hotel for hotel in hoteis if hotel['hotel_id'] != hotel_id]  
-        return {'message': 'Hotel deletado com sucesso.'}, 200
+        return {'message': 'Hotel deletado com sucesso.'}, 200  
+
+# Registrando os recursos  
+api.add_resource(Hoteis, '/hoteis')  
+api.add_resource(Hotel, '/hoteis/<string:hotel_id>')  
+
+if __name__ == '__main__':  
+    app.run(debug=True)
+
+    # Para testar, utilize um cliente HTTP como curl ou Postman:
+    # GET http://localhost:5000/hoteis
+    # POST http://localhost:5000/hoteis/bravo -d 'nome=Novo Hotel&estrelas=4.5&diaria=350&cidade=Cidade do Novo Hotel'
+    # GET http://localhost:5000/hoteis/novo_hotel
+    # PUT http://localhost:5000/hoteis/novo_hotel -d 'nome=Novo Hotel Atualizado&estrelas=4.6&diaria=360&cidade=Cidade Atualizada'
+    # GET http://localhost:5000/hoteis/novo_hotel
+    # DELETE http://localhost:5000/hoteis/novo
