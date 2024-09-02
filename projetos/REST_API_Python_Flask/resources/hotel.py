@@ -1,4 +1,4 @@
-from flask_restful import Resource
+from flask_restful import Resource, reqparse
 
 
 
@@ -20,7 +20,7 @@ class Hotel(Resource):
         return {'message': 'Hotel not found'}, 404  # Return a 404 error if the hotel is not found
 
     def post(self, hotel_id):
-        pass
+        arguments = reqparse.RequestParser().parse_args()
         
 
     def put(self, hotel_id):
