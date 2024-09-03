@@ -44,17 +44,19 @@ class Hotel(Resource):
         return jsonify({'hotel': novo_hotel, 'message': 'Hotel criado com sucesso', 'status_code': 200})
 
     def put(self, hotel_id):
+        if any(hotel['hotel_id'] == hotel_id for hotel in hoteis):
+            return jsonify({'hotel': 'Hotel já existe.', 'message': 'Hotel já existe', 'status_code': 200})
+
         args = self.parser.parse_args()
-        for index, hotel in enumerate(hoteis):
-            if hotel['hotel_id'] == hotel_id:
-                hoteis[index] = {
-                    'hotel_id': hotel_id,
-                    'nome': args['nome'],
-                    'estrelas': args['estrelas'],
-                    'diaria': args['diaria'],
-                    'cidade': args['cidade']
-                }
-                return jsonify({'hotel': hoteis[index], 'message': 'Hotel atualizado com sucesso', 'status_code': 200})
+        novo_hotel = {
+            'hotel_id': hotel_id,
+            'nome': args['nome'],
+            'estrelas': args['estrelas'],
+            'diaria': args['diaria'],
+            'cidade': args['cidade']
+        }
+        hoteis.append(novo_hotel)
+        return jsonify({'hotel': novo_hotel, 'message': 'Hotel criado com sucesso', 'status_code': 200})
         return jsonify({'error': 'Hotel não encontrado', 'message': 'Hotel não encontrado', 'status_code': 404})
 
     def delete(self, hotel_id):
