@@ -1,4 +1,7 @@
-import sqlite3
+# Criando um banco de dados SQLite, com esse script: é possivel criar uma tabela e adicionar dados
+
+
+import sqlite3 
 
 connection = sqlite3.connect("banco.db")
 
