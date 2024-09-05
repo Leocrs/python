@@ -1,11 +1,13 @@
-from app import app
+from flask import Flask
+
+# Create a Flask web server from the current module
+app = Flask(__name__)
 
 @app.route('/')
-@app.route('/index')
-def index():
-    return 'Hello, World!'
+def home():
+    """Display a welcome message on the home page."""
+    return 'Bem-vindo à página inicial!'
 
-
-
-
-
+if __name__ == '__main__':
+    # Run the Flask development server with debugging enabled
+    app.run(debug=True)
