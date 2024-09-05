@@ -1,15 +1,15 @@
 # WEB Arquivos estaticos
 
-from flask import Flask, redirect, url_for
+from flask import Flask
 
-app = Flask(__name__)
+app4 = Flask(__name__, static_folder='public')
 
-app.route('/admin')
+app4.route('/admin')
 def admin():
     return '<h1>Admin</h1>'
 
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app4.run(debug=True)
 
