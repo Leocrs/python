@@ -5,6 +5,7 @@ import dtos.ProductDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import dtos // Assumindo que ProductDTO está no pacote dtos
 
 import static org.springframework.http.HttpStatus.CREATED;
 
@@ -21,3 +22,4 @@ public class ProductController {
         return ResponseEntity.status(CREATED).build();
     }
 }
+import dtos.ProductDTO; // Assumindo que ProductDTO está no pacote dtos
