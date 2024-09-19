@@ -1,6 +1,6 @@
 import pika
 
-def callback(ch, method, properties, body):
+def minha_callback(ch, method, properties, body):
     print(body)
 
 Connection_parameters = pika.connection.ConnectionParameters(
@@ -21,8 +21,7 @@ channel.queue_declare(
 channel.basic_consume(
     queue="data_queue",
     auto_ack=True,
-    on_message_callback=callback
-
+    on_message_callback=minha_callback
 )
 
 print(f"Listen RabbitMQ on port 5672")
