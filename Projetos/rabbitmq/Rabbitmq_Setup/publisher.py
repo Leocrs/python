@@ -9,8 +9,9 @@ class RabbitMQPublisher:
         self.__username = "guest"
         self.__password = "guest"
         self.__exchange = "data_exchange"
-        self.__routing_key = ""
+        self.__routing_key = "" 
         self.__channel = self.create_channel()
+        self.__callback = callback
         
 def create_channel(self):
     Connection_parameters = pika.connection.ConnectionParameters(
@@ -34,8 +35,8 @@ def send_message(self,body,dictionary:Dict):
         )
     )
     
-RabbitMQPublisher = RabbitMQPublisher()
-RabbitMQPublisher.send_message({"Olá mundo"})
+RabbitMQ_Publisher = RabbitMQPublisher(send_message)
+RabbitMQ_Publisher.send_message({"Olá mundo"})
 
   
   
