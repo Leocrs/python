@@ -23,5 +23,3 @@ for indice in range(5): # 0 1 2 3 4
      bebidas.append(input()) # Acrescentando valor na lista
 bebidas.sort() # colocando em ordem
 print(bebidas) # exibindo a lista
-
-
