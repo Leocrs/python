@@ -1,0 +1,14 @@
+name: pipeline
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Copia o código
+        uses: actions/checkout@v4.2.2
+      
+      - name: Roda outro comando!
+        run: echo $(ls)
