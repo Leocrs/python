@@ -17,5 +17,5 @@ print("Vendas por categoria:")
 print(vendas_por_categoria)
 print("\nVendas por estado:")
 print(vendas_por_estado)
-
+# Exibir o resultado
 
