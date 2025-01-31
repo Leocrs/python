@@ -1,12 +1,30 @@
-[tool.poetry]
-name = "seu-projeto"
-version = "0.1.0"
-description = ""
-authors = ["Seu Nome <leonnardo.campos@gmail.com>"]
+name: Python CI
 
-[tool.poetry.dependencies]
-python = "^3.8"
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+
+    - name: Install Poetry
+      run: pip install poetry
+
+    - name: Install dependencies
+      run: poetry install
+
+    - name: Run tests
+      run: poetry run pytest
