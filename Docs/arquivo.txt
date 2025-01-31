@@ -1,3 +1,0 @@
-Em computação, texto simples ou texto puro é o conteúdo 
-de um arquivo sequencial ordinário legível como material 
-textual sem muito processamento.
