@@ -1,0 +1,35 @@
+Como criar venv no Windows (venv) para django projeto completo com ambiente virtual (virtualenv)
+Exemplo:
+
+1- Crie um novo venv
+    python -m venv venv
+
+2- Ative o venv
+    .\venv\Scripts\activate
+
+3- instalando o django
+    pip install django
+
+4 - criando o projeto
+    django-admin startproject nome-do-projeto
+
+5 - executando o projeto
+    python nome-do-projeto/manage.py runserver
+
+6 - para sair do projeto
+    exit
+
+7 - para sair do venv
+    .\venv\Scripts\deactivate
+
+OBSERVAÇÃO:
+Só consegui rodar chamando o cmd: como interpretador
+ e não o bash, Sempre olhar o caminho da pasta e colocar no cmd:
+ 
+
+OBS: se o django-admin startproject "nome-do-projeto" não funcionar e 
+exibir algum erro verifique se o mesmo está instalado com o comando
+pip show django # verificar se o django esta instalado
+
+
+

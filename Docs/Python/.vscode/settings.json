@@ -1,0 +1,12 @@
+
+{
+    "CodeGPT.apiKey": "CodeGPT Plus Beta",
+    "**/templates/**/*.html": "django-html",
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "git.ignoreLimitWarning": true,
+    "java.compile.nullAnalysis.mode": "automatic"
+}
+
+
