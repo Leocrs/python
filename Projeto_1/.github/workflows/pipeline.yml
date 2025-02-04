@@ -18,12 +18,5 @@ jobs:
       - name: Instalar dependências com Poetry
         run: |
           pip install poetry
+          cd Projeto_1\.github\workflows
           poetry install
-
-
-
-
-
-
-          
-          
