@@ -7,16 +7,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Copia o código do repositório
+      - name: Copia os arquivos do repositório
         uses: actions/checkout@v4
       
-      - name: Instalar o python
+      - name: Configura o Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
       
-      - name: Instalar dependências com Poetry
+      - name: Instala dependências
         run: |
           pip install poetry
-          cd Projeto_1\.github\workflows
           poetry install
+          
+      - name: Roda os testes
+        run: poetry run pytest
